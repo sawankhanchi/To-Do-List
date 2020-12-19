@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import ToDoLists from "./ToDoLists";
+import AddIcon from '@material-ui/icons/Add';
 
 const App = () => {
 
@@ -40,7 +41,9 @@ const App = () => {
          Value={inputList} 
          onChange={itemEvent} 
          />
-         <button onClick={listOfItems}> + </button>
+         <button onClick={listOfItems}>
+         <AddIcon />
+         </button>
 
          <ol>
            {/* <li> {inputList} </li> */}
